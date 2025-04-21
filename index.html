@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pressure Testing Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Pressure Testing Station</h1>
+
+  <div class="status">
+    <label>Status:</label>
+    <span id="status-led" class="led idle"></span>
+  </div>
+
+  <div class="readings">
+    <div>Pressure: <span id="pressure">--</span> psi</div>
+    <div>Temperature: <span id="temperature">--</span> °C</div>
+    <div>Chamber: <span id="chamber">--</span></div>
+  </div>
+
+  <button onclick="togglePower()">Toggle Power</button>
+
+  <canvas id="pressureChart" width="600" height="300"></canvas>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
